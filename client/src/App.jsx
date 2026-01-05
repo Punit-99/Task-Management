@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Dashboard from "./pages/Dashboard";
-import ProtectedRoute from "./components/ProtectedRoute";
-import HomeRedirect from "./components/HomeRedirect";
-import PublicRoute from "./components/PublicRoute";
+import Login from "./pages/Login/Login";
+import Signup from "./pages/Signup/Signup";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoutes/ProtectedRoute";
+import HomeRedirect from "./components/ProtectedRoutes/HomeRedirect";
+import PublicRoute from "./components/ProtectedRoutes//PublicRoute";
 
 function App() {
   return (

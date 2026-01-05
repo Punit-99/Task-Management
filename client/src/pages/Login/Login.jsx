@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import API from "../../services/api";
+import styles from "./Login.module.css";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -17,22 +18,20 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="bg-white p-6 rounded-lg shadow w-80">
-        <h2 className="text-xl font-semibold mb-4 text-center">Login</h2>
+    <div className={styles.wrapper}>
+      <div className={styles.card}>
+        <h2 className={styles.title}>Login</h2>
 
-        {error && (
-          <p className="text-red-500 text-sm mb-3 text-center">{error}</p>
-        )}
+        {error && <p className={styles.error}>{error}</p>}
 
         <input
-          className="w-full border p-2 mb-3 rounded"
+          className={styles.input}
           placeholder="Email"
           onChange={(e) => setForm({ ...form, email: e.target.value })}
         />
 
         <input
-          className="w-full border p-2 mb-4 rounded"
+          className={styles.input}
           type="password"
           placeholder="Password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
@@ -40,18 +39,15 @@ export default function Login() {
 
         <button
           disabled={!form.email || !form.password}
-          className="w-full bg-black text-white py-2 rounded hover:bg-gray-800 disabled:opacity-50"
+          className={styles.button}
           onClick={submit}
         >
           Login
         </button>
 
-        <p className="text-sm text-center mt-4">
+        <p className={styles.footerText}>
           Don&apos;t have an account?{" "}
-          <Link
-            to="/signup"
-            className="text-black underline hover:text-gray-700"
-          >
+          <Link to="/signup" className={styles.link}>
             Sign up
           </Link>
         </p>

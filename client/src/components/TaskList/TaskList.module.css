@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Filter buttons */
+.filterBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filterBtn {
+  flex: 1;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.filterInactive {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.filterInactive:hover {
+  background: #d1d5db;
+}
+
+.filterAll {
+  background: black;
+  color: white;
+}
+
+.filterLow {
+  background: #22c55e;
+  color: white;
+}
+
+.filterMedium {
+  background: #eab308;
+  color: white;
+}
+
+.filterHigh {
+  background: #ef4444;
+  color: white;
+}
+
+/* Task card */
+.taskCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.high {
+  background: #fecaca;
+}
+
+.medium {
+  background: #fef08a;
+}
+
+.low {
+  background: #bbf7d0;
+}
+
+/* Task body */
+.taskBody {
+  padding: 12px;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text {
+  color: #374151;
+}
+
+.meta {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Action buttons */
+.actionRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.btn {
+  flex: 1;
+  padding: 6px 0;
+  border-radius: 6px;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+.black {
+  background: black;
+}
+
+.black:hover {
+  background: #1f2937;
+}
+
+.green {
+  background: #22c55e;
+}
+
+.green:hover {
+  background: #16a34a;
+}
+
+.blue {
+  background: #3b82f6;
+}
+
+.blue:hover {
+  background: #2563eb;
+}
+
+.red {
+  background: #ef4444;
+}
+
+.red:hover {
+  background: #dc2626;
+}
+
+.disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Load more */
+.loadMoreWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.loadMoreBtn {
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+}
+
+.loadMoreBtn:hover {
+  background: #1f2937;
+}
+
+.loadMoreBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
