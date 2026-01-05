@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import API from "../services/api";
+import API from "../../services/api";
 import toast from "react-hot-toast";
-import { formatDisplayDate } from "../utils/date";
+import { formatDisplayDate } from "../../utils/date";
 
 export default function TaskList({ refresh, onEdit }) {
   const [tasks, setTasks] = useState([]);

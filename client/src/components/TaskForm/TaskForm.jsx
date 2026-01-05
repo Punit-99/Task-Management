@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import API from "../services/api";
+import API from "../../services/api";
 import toast from "react-hot-toast";
 import { FiCalendar, FiEdit2, FiClipboard } from "react-icons/fi";
-import { formatDisplayDate } from "../utils/date";
+import { formatDisplayDate } from "../../utils/date";
 
 export default function TaskForm({ taskToEdit, onSubmitComplete }) {
   const [task, setTask] = useState({

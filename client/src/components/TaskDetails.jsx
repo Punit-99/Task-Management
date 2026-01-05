@@ -1,4 +1,3 @@
-// frontend/src/components/TaskDetails.js
 import API from "../services/api";
 import { useEffect, useState } from "react";
 

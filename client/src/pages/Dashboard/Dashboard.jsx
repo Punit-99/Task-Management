@@ -1,6 +1,6 @@
 import { useState } from "react";
-import TaskForm from "../components/TaskForm";
-import TaskList from "../components/TaskList";
+import TaskForm from "../../components/TaskForm/TaskForm";
+import TaskList from "../../components/TaskList/TaskList";
 import { Toaster } from "react-hot-toast";
 
 export default function Dashboard() {
